@@ -20,10 +20,11 @@ body{
 }
 
 
+
 /* Block dividers */
 .block-divider{
     width: 75px;
-    height: 5px;
+    height: 5px !important;
     border: 0;
 }
 
@@ -51,6 +52,8 @@ body{
     position: relative;
 }
 
+
+
 /*Main Messge*/
 .jumbotron{
     background-color: transparent;
@@ -62,6 +65,15 @@ body{
     margin-bottom:30px;
 }
 
+.callout-container .lead{
+    margin: 25px 0;
+    color: #a7a7a7;
+}
+.callout-container small{
+    font-size: 60%;
+    font-style: italic;
+    color:#d0d0d0;
+}
 .jumbotron .lead{
     margin: 25px 0;
     color: #a7a7a7;
