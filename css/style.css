@@ -4,11 +4,40 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.alert-container{}
+.container-wrapper{}
+
+.container-wrapper--red{
+    background-color: #f05f40;
+    color: white;
+}
+
+.alert-container .col-12{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.site-wide-alert{
+    border-radius: 0;
+    margin-bottom:0;
+    padding: 5px 15px;
+    background-color: #eec802;
+    border-color: #eec802;
+}
 
 .quotes-container{}
 
 .features-container{}
+
+/* Page Headers */
+.page-header{
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+
+.page-header .h2{
+    margin-top:0;
+}
 
 .opaque-overlay{
     position: absolute;
@@ -26,19 +55,31 @@ body{
     width: 75px;
     height: 5px !important;
     border: 0;
+    opacity: 1;
+    background-color: #444;
 }
 
 .block-divider--orange{    
     background-color: #f05f40;
 }
 
+.block-divider--white{    
+    background-color: white;
+}
+
+
 .block-divider--short{
     width:35px;
 }
 
+/* Content containers */
+.content-container{
+    padding-top:75px;
+    padding-bottom:75px;
+}
+
 .callout-container{
     height:100vh;
-
     background: url("../images/whiskey-background.jpg") no-repeat bottom right fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -52,9 +93,41 @@ body{
     position: relative;
 }
 
+/* Navbar */
+.navalert-container{
+    position:absolute;
+    top:0;
+    left:0;
+    padding-left: 0;
+    padding-right: 0;
+    z-index:1;
+}
+/*override bootstrap navbar class*/
+.navbar{
+    margin-bottom: 0;
+    border:0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.25);
+}
+/*override bootstrap navbar-toggler class*/
+.navbar .navbar-toggler{
+    border:0;
+}
 
+.navbar-brand{
+    font-weight: bold;
+}
+
+.navbar .navbar-nav a{
+    font-weight: bold;
+}
 
 /*Main Messge*/
+
+.z-forward{
+    z-index: 1;
+}
+
 .jumbotron{
     background-color: transparent;
 }
@@ -67,7 +140,7 @@ body{
 
 .callout-container .lead{
     margin: 25px 0;
-    color: #a7a7a7;
+    color: #a7a7a7;;
 }
 .callout-container small{
     font-size: 60%;
@@ -104,4 +177,16 @@ body{
 .btn--red:active:focus{
     background-color: #df4929;
     border-color:#df4929;;
+}
+
+.feature{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature i{
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+
 }
